@@ -11,3 +11,23 @@ There is an example of using PCL in Intel's articles using R200 camera (https://
 ## Code Explanation
 
 There is enough explanation in the Intel's website: https://software.intel.com/en-us/articles/using-librealsense-and-pcl-to-create-point-cloud-data
+
+## How To Run Example
+
+It is tested in Ubuntu 16.04.2
+
+### Install Dependencies
+
+See https://github.com/IntelRealSense/librealsense/blob/v1.12.1/doc/installation.md for installing ReaLsense v1.12.1.
+See http://www.pointclouds.org/documentation/tutorials/compiling_pcl_posix.php for compiling PCL. I've used PCL 1.8.0 (https://github.com/PointCloudLibrary/pcl/tree/pcl-1.8.0).
+
+### Building Example
+
+* `mkdir build`
+* `cd build`
+* `cmake ..`
+* `make -j`
+
+### Run
+
+* `./LRS_PCL`
